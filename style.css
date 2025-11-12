@@ -493,6 +493,7 @@ footer {
   }
   
 
+ 
 /* --- FIX definitivo para móviles: "Sobre el taller" --- */
 @media (max-width: 900px) {
   .mentores-laterales {
@@ -514,13 +515,13 @@ footer {
 
   .mentor-izq {
     order: 1;
-    margin-bottom: 10px;
+    margin-bottom: 80px;
   }
 
   .mentor-der {
     order: 3;
-    margin-top: -100px; /* sube a Dani */
-    margin-bottom: 20px;
+    margin-top: -320px; /* sube a Dani */
+    margin-bottom: 120px;
     position: relative;
     z-index: 5;
   }
