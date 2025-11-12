@@ -510,7 +510,7 @@ footer {
 
   /* Subimos un poco la segunda imagen */
   .mentor-der {
-    margin-top: -60px; /* <- podés ajustar a -50 o -70 según el efecto que quieras */
+    margin-top: -70px; /* <- podés ajustar a -50 o -70 según el efecto que quieras */
     margin-bottom: 20px; /* espacio equilibrado con la siguiente sección */
   }
 
