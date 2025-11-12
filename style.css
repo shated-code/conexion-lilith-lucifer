@@ -492,8 +492,6 @@ footer {
     box-shadow: 0 0 25px rgba(194,72,133,0.3);
   }
   
-
- 
 /* --- FIX definitivo para móviles: "Sobre el taller" --- */
 @media (max-width: 900px) {
   .mentores-laterales {
