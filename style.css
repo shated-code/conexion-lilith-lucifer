@@ -497,11 +497,24 @@ footer {
 @media (max-width: 900px) {
   .mentores-laterales {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 10px; /* antes era 30px */
+    margin-top: 20px;
   }
+
   .mentor-izq img,
   .mentor-der img {
     width: 200px;
     height: 250px;
+  }
+
+  /* Ajuste para subir a Dani y mantener proporción */
+  .mentor-der {
+    margin-top: -20px; /* sube un poco la segunda imagen */
+  }
+
+  /* Opcional: reduce espacio del texto para que todo quede más compacto */
+  .contenido-central {
+    padding: 0 15px;
   }
 }
