@@ -493,36 +493,45 @@ footer {
   }
   
 
-/* --- Ajuste visual en móviles para sección "Sobre el Taller" --- */
+/* --- FIX definitivo para móviles: "Sobre el taller" --- */
 @media (max-width: 900px) {
   .mentores-laterales {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: center;
+    gap: 0; /* eliminamos cualquier separación adicional */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
   }
 
-  .mentor-izq img,
-  .mentor-der img {
-    width: 200px;
-    height: 250px;
-  }
-
-  /* Subimos un poco la segunda imagen */
-  .mentor-der {
-    margin-top: -70px; /* <- podés ajustar a -50 o -70 según el efecto que quieras */
-    margin-bottom: 20px; /* espacio equilibrado con la siguiente sección */
-  }
-
-  /* Ajuste del texto central para reducir espacio visual */
   .contenido-central {
+    order: 2; /* mantenemos texto en el medio */
     padding: 0 20px;
-    margin-bottom: -10px;
+    margin: 0;
   }
 
-  /* Evitar que la sección siguiente agregue tanto espacio */
+  .mentor-izq {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
+  .mentor-der {
+    order: 3;
+    margin-top: -40px; /* sube a Dani */
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Ajuste general de la sección para evitar huecos con la siguiente */
   .sobre {
-    padding-bottom: 40px;
+    padding-bottom: 0;
+  }
+
+  /* Reducimos el margen superior de la siguiente sección si fuera necesario */
+  .sombra {
+    margin-top: -40px;
   }
 }
-
